@@ -21,15 +21,15 @@ You've been contracted by the editors of a food magazine, Eat Safe, Love, to eva
 9. Assigned the establishments collection to a variable to prepare the collection for use.
 
 # Details
-- Included the 'mongoimport' command text, have used to import 'establishments.json' in a markdown cell at the beginning of the Jupyter notebook file.   
-- The mongoimport command text correctly dropped any existing establishments collection before importing establishments.json into MongoDB.  
-- The database is named uk_food and the collection is named establishments.  
+- Included the "mongoimport" command text, have used to import 'establishments.json' in a markdown cell at the beginning of the Jupyter notebook file.   
+- The mongoimport command text correctly dropped any existing 'establishments' collection before importing 'establishments.json' into 'MongoDB'.  
+- The database is named 'uk_food' and the collection is named 'establishments'.  
 - Correctly imported PyMongo and Pretty Print.   
 - An instance of the Mongo Client is created.   
-- Listed the databases have in Mongo, which includes uk_food.    
-- Listed the collection(s) in the uk_food database, which includes establishments in the output.    
-- Used find_one() and pprint to display one document in the establishments collection.     
-- The establishments collection is assigned to a variable.
+- Listed the databases have in Mongo, which includes 'uk_food'.    
+- Listed the collection(s) in the 'uk_food' database, which includes 'establishments' in the output.    
+- Used "find_one()" and pprint to display one document in the 'establishments' collection.     
+- The 'establishments' collection is assigned to a variable.
 
 # Part 2: Update the Database
 Used NoSQL_setup_starter.ipynb for this section of the challenge.  
@@ -38,7 +38,8 @@ The magazine editors had some requested modifications for the database before pe
 Made the following changes to the establishments collection:  
 
 1. An exciting new halal restaurant just opened in Greenwich, but hasn't been rated yet.  
-The magazine had asked to include it in the analysis. 
+The magazine had asked to include it in the analysis.
+(The supplied data for the "Penang Flavours" restaurant was correctly inserted into the establishments collection)    
 Added the following information to the database:    
 
 {    
@@ -70,12 +71,14 @@ Added the following information to the database:
     "NewRatingPending":True    
 }    
 
-2. Found the BusinessTypeID for "Restaurant/Cafe/Canteen" and returned only the BusinessTypeID and BusinessType fields.  
-3. Updated the new restaurant with the BusinessTypeID found.
+2. Found the BusinessTypeID for "Restaurant/Cafe/Canteen" and returned only the BusinessTypeID and BusinessType fields.
+    (A query was performed to find the BusinessTypeID for "Restaurant/Cafe/Canteen" and returned only the BusinessTypeID and BusinessType)      
+3. Updated the new restaurant with the BusinessTypeID found.    
+   (The "Penang Flavours" document was updated with the correct value for BusinessTypeID)    
 4. The magazine was not interested in any establishments in Dover, 
 so checked how many documents contain the Dover Local Authority. 
 Then, removed any establishments within the Dover Local Authority from the database, and checked the number of documents to ensure they were deleted.
 
-5. Some of the number values were stored as strings, when they should be stored as numbers.
+5. Some of the number values were stored as strings, when they should be stored as numbers.    
 - Used update_many to convert latitude and longitude to decimal numbers.
 - Used update_many to convert RatingValue to integer numbers.
