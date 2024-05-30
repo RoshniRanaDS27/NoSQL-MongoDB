@@ -37,47 +37,45 @@ Used NoSQL_setup_starter.ipynb for this section of the challenge.
 The magazine editors had some requested modifications for the database before performing any queries or analysis for them. 
 Made the following changes to the establishments collection:  
 
-An exciting new halal restaurant just opened in Greenwich, but hasn't been rated yet.  
+1. An exciting new halal restaurant just opened in Greenwich, but hasn't been rated yet.  
 The magazine had asked to include it in the analysis. 
-Added the following information to the database:
+Added the following information to the database:    
 
-{
-    "BusinessName":"Penang Flavours",
-    "BusinessType":"Restaurant/Cafe/Canteen",
-    "BusinessTypeID":"",
-    "AddressLine1":"Penang Flavours",
-    "AddressLine2":"146A Plumstead Rd",
-    "AddressLine3":"London",
-    "AddressLine4":"",
-    "PostCode":"SE18 7DY",
-    "Phone":"",
-    "LocalAuthorityCode":"511",
-    "LocalAuthorityName":"Greenwich",
-    "LocalAuthorityWebSite":"http://www.royalgreenwich.gov.uk",
-    "LocalAuthorityEmailAddress":"health@royalgreenwich.gov.uk",
-    "scores":{
-        "Hygiene":"",
-        "Structural":"",
-        "ConfidenceInManagement":""
+{    
+    "BusinessName":"Penang Flavours",    
+    "BusinessType":"Restaurant/Cafe/Canteen",    
+    "BusinessTypeID":"",    
+    "AddressLine1":"Penang Flavours",    
+    "AddressLine2":"146A Plumstead Rd",    
+    "AddressLine3":"London",    
+    "AddressLine4":"",    
+    "PostCode":"SE18 7DY",    
+    "Phone":"",    
+    "LocalAuthorityCode":"511",    
+    "LocalAuthorityName":"Greenwich",    
+    "LocalAuthorityWebSite":"http://www.royalgreenwich.gov.uk",    
+    "LocalAuthorityEmailAddress":"health@royalgreenwich.gov.uk",    
+    "scores":{    
+        "Hygiene":"",    
+        "Structural":"",    
+        "ConfidenceInManagement":""    
     },
     "SchemeType":"FHRS",
     "geocode":{
         "longitude":"0.08384000",
         "latitude":"51.49014200"
-    },
-    "RightToReply":"",
-    "Distance":4623.9723280747176,
-    "NewRatingPending":True
-}
+    },    
+    "RightToReply":"",    
+    "Distance":4623.9723280747176,    
+    "NewRatingPending":True    
+}    
 
-Found the BusinessTypeID for "Restaurant/Cafe/Canteen" and returned only the BusinessTypeID and BusinessType fields.  
-Updated the new restaurant with the BusinessTypeID found.
-
-The magazine was not interested in any establishments in Dover, 
+2. Found the BusinessTypeID for "Restaurant/Cafe/Canteen" and returned only the BusinessTypeID and BusinessType fields.  
+3. Updated the new restaurant with the BusinessTypeID found.
+4. The magazine was not interested in any establishments in Dover, 
 so checked how many documents contain the Dover Local Authority. 
 Then, removed any establishments within the Dover Local Authority from the database, and checked the number of documents to ensure they were deleted.
 
-Some of the number values were stored as strings, when they should be stored as numbers.
-
-Used update_many to convert latitude and longitude to decimal numbers.
-Used update_many to convert RatingValue to integer numbers.
+5. Some of the number values were stored as strings, when they should be stored as numbers.
+- Used update_many to convert latitude and longitude to decimal numbers.
+- Used update_many to convert RatingValue to integer numbers.
