@@ -18,4 +18,15 @@ You've been contracted by the editors of a food magazine, Eat Safe, Love, to eva
 #Listed the collection(s) in the database to ensure that establishments is there.  
 #Found and displayed one document in the establishments collection using find_one and display with pprint.
 
-9. Assigned the establishments collection to a variable to prepare the collection for use.  
+9. Assigned the establishments collection to a variable to prepare the collection for use.
+
+# Details information 
+- Included the mongoimport command text have used to import establishments.json in a markdown cell at the beginning of the Jupyter notebook file.   
+- The mongoimport command text correctly dropped any existing establishments collection before importing establishments.json into MongoDB.  
+- The database is named uk_food and the collection is named establishments.  
+- Correctly imported PyMongo and Pretty Print.   
+- An instance of the Mongo Client is created.   
+- Listed the databases have in Mongo, which includes uk_food.    
+- Listed the collection(s) in the uk_food database, which includes establishments in the output.    
+- Used find_one() and pprint to display one document in the establishments collection.     
+- The establishments collection is assigned to a variable.  
