@@ -2,6 +2,11 @@
 The UK Food Standards Agency evaluates various establishments across the United Kingdom, and gives them a food hygiene rating. 
 You've been contracted by the editors of a food magazine, Eat Safe, Love, to evaluate some of the ratings data in order to help their journalists and food critics decide where to focus future articles.
 
+Repo work is devided in to three parts    
+-Part 1: Database and Jupyter Notebook Set Up  
+-Part 2: Update the Database  
+- Part 3: Exploratory Analysis  
+
 # Instructions
 # Part 1: Database and Jupyter Notebook Set Up  
 
@@ -86,15 +91,52 @@ Then, removed any establishments within the Dover Local Authority from the datab
 # Part 3: Exploratory Analysis    
 Eat Safe, Love has specific questions they wanted to answer, which will help them find the locations they wish to visit and avoid.    
 
-Used "NoSQL_analysis_starter.ipynb" for this section.    
+- Used "NoSQL_analysis_starter.ipynb" for this section.    
 Some notes to be aware of while exploring the dataset:    
 
-RatingValue refers to the overall rating decided by the Food Authority and ranges from 1-5.    
-The higher the value, the better the rating.    
+- RatingValue refers to the overall rating decided by the Food Authority and ranges from 1-5.    
+- The higher the value, the better the rating.    
 
 Note: This field also includes non-numeric values such as 'Pass', where 'Pass' means that the establishment passed their inspection but isn't given a number rating.     
 will coerce non-numeric values to nulls during the database setup before converting ratings to integers.    
 The scores for Hygiene, Structural, and ConfidenceInManagement work in reverse.    
 This means, the higher the value, the worse the establishment is in these areas.    
 
-Used the following questions to explore the database, and find the answers, so you can provide them to the magazine editors.
+- Used the following questions to explore the database, and find the answers, so you can provide them to the magazine editors.
+
+# Question 1: Which establishments have a hygiene score equal to 20? 
+
+- A query was performed to find the establishments with a hygiene score of 20.        
+- "count_documents()" is used to list the correct number of documents.        
+- The first result was printed using pprint.        
+- The results are converted to a "Pandas DataFrame" and displays the first 10 rows.     
+
+# Question 2: Which establishments in London have a RatingValue greater than or equal to 4?     
+
+- A query was performed to find the establishments in London with a RatingValue greater than or equal to 4.    
+- The query uses the "$regex" operator to locate the London establishments.       
+- "count_documents()" was used to list the correct number of documents.    
+- The first result was printed using pprint.    
+- The results were converted to a Pandas DataFrame and displays the first 10 rows.    
+
+# Question 3: What are the top 5 establishments with a RatingValue of 5, sorted by lowest hygiene score, nearest to the new restaurant added, "Penang Flavours"?
+
+- A query was performed to find the establishments within 0.01 degree of the "Penang Flavours" restaurant.    
+- The query also limits the results to establishments with a RatingValue of 5.    
+- The query uses the sort() method in PyMongo to sort in ascending order on the hygiene score.    
+- The query uses the limit() method in PyMongo to limit the results to 5.    
+- All five results were printed using pprint.    
+- The results were converted to a Pandas DataFrame and displayed.    
+
+# Question 4: How many establishments in each Local Authority area have a hygiene score of 0? Sort the results from highest to lowest, and print out the top ten local authority areas. 
+
+- An "aggregation pipeline" ws built to include a match query, group, and sort.     
+- The match query matches documents with a hygiene score of 0.    
+- The group step of the pipeline was grouped on LocalAuthorityName and counts the number of documents.    
+- The sort step of the pipeline sorts the count of the documents in descending order.    
+- The aggregation pipeline was correctly sent to the aggregate() method.    
+- The results from the aggregation query was cast as a list and then saved to a variable.
+- The first ten results were printed using pprint.    
+- The results were converted to a Pandas DataFrame and displays the first 10 rows.
+
+# Deployment Step further took place
