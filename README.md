@@ -21,7 +21,7 @@ You've been contracted by the editors of a food magazine, Eat Safe, Love, to eva
 9. Assigned the establishments collection to a variable to prepare the collection for use.
 
 # Detailed information 
-- Included the mongoimport command text have used to import establishments.json in a markdown cell at the beginning of the Jupyter notebook file.   
+- Included the 'mongoimport' command text, have used to import 'establishments.json' in a markdown cell at the beginning of the Jupyter notebook file.   
 - The mongoimport command text correctly dropped any existing establishments collection before importing establishments.json into MongoDB.  
 - The database is named uk_food and the collection is named establishments.  
 - Correctly imported PyMongo and Pretty Print.   
