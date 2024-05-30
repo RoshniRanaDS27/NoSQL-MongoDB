@@ -16,5 +16,6 @@ You've been contracted by the editors of a food magazine, Eat Safe, Love, to eva
 7. Confirmed that have created the database and loaded the data properly:  
 #Listed the databases have in MongoDB. Confirmed that uk_food is listed.  
 #Listed the collection(s) in the database to ensure that establishments is there.  
-#Found and displayed one document in the establishments collection using find_one and display with pprint.  
-#Assigned the establishments collection to a variable to prepare the collection for use.  
+#Found and displayed one document in the establishments collection using find_one and display with pprint.
+
+9. Assigned the establishments collection to a variable to prepare the collection for use.  
