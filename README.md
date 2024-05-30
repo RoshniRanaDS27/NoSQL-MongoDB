@@ -71,9 +71,9 @@ Added the following information to the database:
     "NewRatingPending":True    
 }    
 
-2. Found the BusinessTypeID for "Restaurant/Cafe/Canteen" and returned only the BusinessTypeID and BusinessType fields.
+2. Found the BusinessTypeID for "Restaurant/Cafe/Canteen" and returned only the BusinessTypeID and BusinessType fields.    
     (A query was performed to find the BusinessTypeID for "Restaurant/Cafe/Canteen" and returned only the BusinessTypeID and BusinessType)      
-3. Updated the new restaurant with the BusinessTypeID found.    
+3. Updated the new restaurant with the BusinessTypeID found.        
    (The "Penang Flavours" document was updated with the correct value for BusinessTypeID)    
 4. The magazine was not interested in any establishments in Dover, 
 so checked how many documents contain the Dover Local Authority. 
@@ -82,3 +82,9 @@ Then, removed any establishments within the Dover Local Authority from the datab
 5. Some of the number values were stored as strings, when they should be stored as numbers.    
 - Used update_many to convert latitude and longitude to decimal numbers.
 - Used update_many to convert RatingValue to integer numbers.
+
+# Part 3: Exploratory Analysis    
+Eat Safe, Love has specific questions they wanted to answer, which will help them find the locations they wish to visit and avoid.    
+
+Used "NoSQL_analysis_starter.ipynb" for this section.    
+Some notes to be aware of while exploring the dataset:
