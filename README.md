@@ -116,7 +116,10 @@ This means, the higher the value, the worse the establishment is in these areas.
 - A query was performed to find the establishments with a hygiene score of 20.        
 - "count_documents()" is used to list the correct number of documents.        
 - The first result was printed using pprint.        
-- The results are converted to a "Pandas DataFrame" and displays the first 10 rows.     
+- The results are converted to a "Pandas DataFrame" and displays the first 10 rows.
+
+![image](https://github.com/user-attachments/assets/b6005675-540f-4eb7-8f08-b709e2af920b)
+![image](https://github.com/user-attachments/assets/9012d71f-3fbe-4b81-94ce-d4b82ded18be)
 
 # Question 2: Which establishments in London have a RatingValue greater than or equal to 4?     
 
@@ -124,7 +127,11 @@ This means, the higher the value, the worse the establishment is in these areas.
 - The query uses the "$regex" operator to locate the London establishments.       
 - "count_documents()" was used to list the correct number of documents.    
 - The first result was printed using pprint.    
-- The results were converted to a Pandas DataFrame and displays the first 10 rows.    
+- The results were converted to a Pandas DataFrame and displays the first 10 rows.
+
+![image](https://github.com/user-attachments/assets/2c12f5b5-a571-49e1-9c44-2328bb001535)
+![image](https://github.com/user-attachments/assets/25de0d39-c578-4636-b767-ad0186cd74b7)
+
 
 # Question 3: What are the top 5 establishments with a RatingValue of 5, sorted by lowest hygiene score, nearest to the new restaurant added, "Penang Flavours"?
 
@@ -133,7 +140,11 @@ This means, the higher the value, the worse the establishment is in these areas.
 - The query uses the sort() method in PyMongo to sort in ascending order on the hygiene score.    
 - The query uses the limit() method in PyMongo to limit the results to 5.    
 - All five results were printed using pprint.    
-- The results were converted to a Pandas DataFrame and displayed.    
+- The results were converted to a Pandas DataFrame and displayed.
+
+![image](https://github.com/user-attachments/assets/f5c83fa4-a3c5-49e3-9e38-3a08296dc4ee)
+![image](https://github.com/user-attachments/assets/c6477e30-8204-4ca1-bea7-e524934a7633)
+
 
 # Question 4: How many establishments in each Local Authority area have a hygiene score of 0? Sort the results from highest to lowest, and print out the top ten local authority areas. 
 
@@ -145,7 +156,8 @@ This means, the higher the value, the worse the establishment is in these areas.
 - The results from the aggregation query was cast as a list and then saved to a variable.
 - The first ten results were printed using pprint.    
 - The results were converted to a Pandas DataFrame and displays the first 10 rows.
-
-![image](https://github.com/user-attachments/assets/62316602-b1c8-4833-a17a-edc2596c98b3)
-
+![image](https://github.com/user-attachments/assets/b92ec1de-da86-41b8-bb8f-2f41c4d61ad0)
+![image](https://github.com/user-attachments/assets/eaaa2545-144b-4ed0-b60b-885387cebbe4)
+![image](https://github.com/user-attachments/assets/c9b82784-57b5-4b55-839b-09a2d5106d45)
+      
 # Deployment Step further took place
