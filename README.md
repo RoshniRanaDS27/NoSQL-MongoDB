@@ -54,27 +54,46 @@ Used NoSQL_setup_starter.ipynb for this section of the challenge.
 
 The magazine editors had some requested modifications for the database before performing any queries or analysis for them. 
 Made the following changes to the establishments collection:  
+![image](https://github.com/user-attachments/assets/07985c30-50d8-49a2-ae38-728f4c67377c)
 
 1. An exciting new halal restaurant just opened in Greenwich, but hasn't been rated yet.  
 The magazine had asked to include it in the analysis.
 (The supplied data for the "Penang Flavours" restaurant was correctly inserted into the establishments collection)    
 Added the following information to the database:    
+![image](https://github.com/user-attachments/assets/d9696e5c-221e-4211-8fcf-decd7ca6e79d)
+![image](https://github.com/user-attachments/assets/14386640-cb1e-4e32-b867-d1f266f99f53)
+      
+2. Updated the new restaurant with the BusinessTypeID found.        
+   (The "Penang Flavours" document was updated with the correct value for BusinessTypeID)
+![image](https://github.com/user-attachments/assets/ed720f4c-82d6-4307-9aee-17663318acd6)
+![image](https://github.com/user-attachments/assets/cfa2a353-f608-4679-b17c-a8b39534e0cf)
+![image](https://github.com/user-attachments/assets/5bcc827b-7dd7-4b9d-9afc-23f5716ac3f5)
 
-![image](https://github.com/user-attachments/assets/c277da9b-293f-462c-98d6-2b410578a853)
+3. Found the BusinessTypeID for "Restaurant/Cafe/Canteen" and returned only the BusinessTypeID and BusinessType fields.    
+    (A query was performed to find the BusinessTypeID for "Restaurant/Cafe/Canteen" and returned only the BusinessTypeID and BusinessType)  
+![image](https://github.com/user-attachments/assets/cfa5a696-de62-4ca2-92a5-56a27202b9aa)
+![image](https://github.com/user-attachments/assets/728ce2b4-ed4f-433b-bf63-dd3c21586fa0)
+![image](https://github.com/user-attachments/assets/ad6bff9c-d176-43c8-b232-ae5f28153399)
 
-  
 
-2. Found the BusinessTypeID for "Restaurant/Cafe/Canteen" and returned only the BusinessTypeID and BusinessType fields.    
-    (A query was performed to find the BusinessTypeID for "Restaurant/Cafe/Canteen" and returned only the BusinessTypeID and BusinessType)      
-3. Updated the new restaurant with the BusinessTypeID found.        
-   (The "Penang Flavours" document was updated with the correct value for BusinessTypeID)    
 4. The magazine was not interested in any establishments in Dover, 
 so checked how many documents contain the Dover Local Authority. 
 Then, removed any establishments within the Dover Local Authority from the database, and checked the number of documents to ensure they were deleted.
+![image](https://github.com/user-attachments/assets/a6ef2d4f-244e-4b9a-b346-dedf33e9b94a)
+![image](https://github.com/user-attachments/assets/3fb2d0b4-10cb-4bc4-bb39-f30cf1ef7788)
+![image](https://github.com/user-attachments/assets/0e19811c-5d0c-467f-ab03-96494b7abd56)
+![image](https://github.com/user-attachments/assets/3f09e8dd-850c-42e9-87a9-58a0258a8363)
+![image](https://github.com/user-attachments/assets/b5169112-e617-41c5-9f55-6c989731cd39)
 
 5. Some of the number values were stored as strings, when they should be stored as numbers.    
 - Used update_many to convert latitude and longitude to decimal numbers.
 - Used update_many to convert RatingValue to integer numbers.
+![image](https://github.com/user-attachments/assets/5bc73c5f-7b33-4c60-95e5-fb987550cebb)
+![image](https://github.com/user-attachments/assets/bb828267-e9fc-4385-88b0-04338db45173)
+![image](https://github.com/user-attachments/assets/6c438b0a-ef45-4e51-b8ea-c153875cdf9e)
+![image](https://github.com/user-attachments/assets/f927c838-91aa-4bdc-8d2b-fa3c72e25318)
+![image](https://github.com/user-attachments/assets/0f91c7e1-f25f-464a-9f41-f58654409ba0)
+![image](https://github.com/user-attachments/assets/72ce5060-6d8e-4d39-a4c5-0299dbcce353)
 
 # Part 3: Exploratory Analysis    
 Eat Safe, Love has specific questions they wanted to answer, which will help them find the locations they wish to visit and avoid.    
