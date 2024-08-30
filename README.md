@@ -8,10 +8,20 @@ Repo work is devided in to three parts
 
 - Part 1: Database and Jupyter Notebook Set Up  
 - Part 2: Update the Database  
-- Part 3: Exploratory Analysis  
+- Part 3: Exploratory Analysis
 
 # Instructions
 # Part 1: Database and Jupyter Notebook Set Up  
+![image](https://github.com/user-attachments/assets/38d0d4c1-26f8-40d5-ba41-8a57b1af510a)
+![image](https://github.com/user-attachments/assets/ed2fe7a4-4817-42b7-aca4-53c13f436b4a)
+![image](https://github.com/user-attachments/assets/f2010c11-89cc-43f2-9ad8-ae2c2830d017)
+![image](https://github.com/user-attachments/assets/f9b1e55c-b8e9-43d3-a516-b6de34b03535)
+![image](https://github.com/user-attachments/assets/22df6acb-e9de-4e34-9492-7e74b887150d)
+![image](https://github.com/user-attachments/assets/da23e93c-7977-4b96-8a3e-231512e7f337)
+![image](https://github.com/user-attachments/assets/8eb22459-67f2-4a6b-a575-2781e9856727)
+![image](https://github.com/user-attachments/assets/1ff106d9-8640-43b4-9873-6684819045a1)
+![image](https://github.com/user-attachments/assets/fd2de6be-eba5-4211-9d6f-74fa4542826e)
+![image](https://github.com/user-attachments/assets/c8e67050-3b70-41b9-8151-297be97c755e)
 
 1. Used  NoSQL_setup_starter.ipynb for this section of this work.  
 2. Imported the data provided in the establishments.json file from my Terminal (#by using MongoDB Codes).  
@@ -26,7 +36,7 @@ Repo work is devided in to three parts
 #Listed the collection(s) in the database to ensure that establishments is there.  
 #Found and displayed one document in the establishments collection using find_one and display with pprint.
 
-9. Assigned the establishments collection to a variable to prepare the collection for use.
+8. Assigned the establishments collection to a variable to prepare the collection for use.
 
 # Details
 - Included the "mongoimport" command text, have used to import 'establishments.json' in a markdown cell at the beginning of the Jupyter notebook file.   
