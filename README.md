@@ -1,4 +1,6 @@
 # Background
+<img src="https://www.emugifs.net/wp-content/uploads/2021/09/Homer-Eating-GIF-at-The-Fish-Restaurant-Animation-from-The-Simpson-Cartoon-Episode-Make-Your-MEME-and-Reaction.gif" alt="Homer Eating at The Fish Restaurant GIF">
+
 The UK Food Standards Agency evaluates various establishments across the United Kingdom, and gives them a food hygiene rating. 
 You've been contracted by the editors of a food magazine, Eat Safe, Love, to evaluate some of the ratings data in order to help their journalists and food critics decide where to focus future articles.
 
