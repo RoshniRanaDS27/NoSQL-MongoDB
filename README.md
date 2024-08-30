@@ -48,34 +48,9 @@ The magazine had asked to include it in the analysis.
 (The supplied data for the "Penang Flavours" restaurant was correctly inserted into the establishments collection)    
 Added the following information to the database:    
 
-{    
-    "BusinessName":"Penang Flavours",    
-    "BusinessType":"Restaurant/Cafe/Canteen",    
-    "BusinessTypeID":"",    
-    "AddressLine1":"Penang Flavours",    
-    "AddressLine2":"146A Plumstead Rd",    
-    "AddressLine3":"London",    
-    "AddressLine4":"",    
-    "PostCode":"SE18 7DY",    
-    "Phone":"",    
-    "LocalAuthorityCode":"511",    
-    "LocalAuthorityName":"Greenwich",    
-    "LocalAuthorityWebSite":"http://www.royalgreenwich.gov.uk",    
-    "LocalAuthorityEmailAddress":"health@royalgreenwich.gov.uk",    
-    "scores":{    
-        "Hygiene":"",    
-        "Structural":"",    
-        "ConfidenceInManagement":""    
-    },
-    "SchemeType":"FHRS",
-    "geocode":{
-        "longitude":"0.08384000",
-        "latitude":"51.49014200"
-    },    
-    "RightToReply":"",    
-    "Distance":4623.9723280747176,    
-    "NewRatingPending":True    
-}    
+![image](https://github.com/user-attachments/assets/c277da9b-293f-462c-98d6-2b410578a853)
+
+  
 
 2. Found the BusinessTypeID for "Restaurant/Cafe/Canteen" and returned only the BusinessTypeID and BusinessType fields.    
     (A query was performed to find the BusinessTypeID for "Restaurant/Cafe/Canteen" and returned only the BusinessTypeID and BusinessType)      
@@ -139,5 +114,7 @@ This means, the higher the value, the worse the establishment is in these areas.
 - The results from the aggregation query was cast as a list and then saved to a variable.
 - The first ten results were printed using pprint.    
 - The results were converted to a Pandas DataFrame and displays the first 10 rows.
+
+![image](https://github.com/user-attachments/assets/62316602-b1c8-4833-a17a-edc2596c98b3)
 
 # Deployment Step further took place
