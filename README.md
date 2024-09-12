@@ -11,7 +11,7 @@ Repo work is devided in to three parts
 - Part 2: Update the Database  
 - Part 3: Exploratory Analysis
 
-# Instructions
+# Instructions 
 # Part 1: Database and Jupyter Notebook Set Up  
 ![image](https://github.com/user-attachments/assets/38d0d4c1-26f8-40d5-ba41-8a57b1af510a)
 ![image](https://github.com/user-attachments/assets/ed2fe7a4-4817-42b7-aca4-53c13f436b4a)
